@@ -1,0 +1,6 @@
+//HORARIOS
+package com.amil.crm_backend.entity;
+
+public class AgendaEntity {
+
+}
