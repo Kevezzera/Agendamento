@@ -14,5 +14,6 @@ public class HorarioService {
 
     public void save(HorarioDto horarioDto){
         HorarioEntity horario = new HorarioEntity(horarioDto);
+        horarioRepository.save(horario);
     }
 }

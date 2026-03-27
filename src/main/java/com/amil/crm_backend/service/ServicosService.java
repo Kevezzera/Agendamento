@@ -14,5 +14,6 @@ public class ServicosService {
 
     public void save(ServicesDTO servicesDTO){
         ServicosEntity servicos = new ServicosEntity(servicesDTO);
+        servicosRepository.save(servicos);
     }
 }
