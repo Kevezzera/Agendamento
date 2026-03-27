@@ -1,4 +1,4 @@
 package com.amil.crm_backend.entity;
 
-public class ServicesEntity {
+public class ServicosEntity {
 }

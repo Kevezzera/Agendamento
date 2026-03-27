@@ -1,4 +1,4 @@
-package com.amil.crm_backend.DTO;
+package com.amil.crm_backend.dto;
 
 import com.amil.crm_backend.entity.ClientEntity;
 import lombok.Getter;
@@ -6,16 +6,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 
 @Setter
 @Getter
 @NoArgsConstructor
 public class ClientDto {
+
+    private long id;
     private String firstName;
     private String lastName;
     private String email;
-    private LocalDateTime nascimento;
+    private LocalDate nascimento;
     private String cell;
     private String cpf;
 
