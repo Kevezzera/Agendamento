@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
-@Table(name = "agenda")
+@Table(name = "servicos")
 @NoArgsConstructor
 @Setter
 @Getter
