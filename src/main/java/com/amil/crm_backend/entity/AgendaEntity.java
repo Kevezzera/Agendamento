@@ -1,7 +1,5 @@
-//HORARIOS
 package com.amil.crm_backend.entity;
 
-import com.amil.crm_backend.dto.AgendaDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,21 +11,18 @@ import org.springframework.beans.BeanUtils;
 @Setter
 @Getter
 @Entity
-public class AgendaEntity {
+public class AgendaEntity{
 
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     private Long id;
-    @Column(nullable = false)
-    private String nome;
-    @Column(nullable = false)
-    private float valor;
-    @Column(nullable = false)
-    private String descricao;
     @Column(nullable = false)
     private String status;
 
-    public AgendaEntity(AgendaDto agendaDto){
-        BeanUtils.copyProperties(agendaDto, this);
+    public AgendaEntity(AgendaEntity agendaEntity){
+        BeanUtils.copyProperties(agendaEntity, this);
     }
+
+
+
 }
