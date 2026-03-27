@@ -23,8 +23,8 @@ public class ClientDto {
     private String cpf;
 
 
-    public ClientDto(ClientEntity client){
-        BeanUtils.copyProperties(client, this);
+    public ClientDto(ClientEntity clientEntity){
+        BeanUtils.copyProperties(clientEntity, this);
     }
 
 }
