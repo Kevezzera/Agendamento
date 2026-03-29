@@ -12,7 +12,7 @@ import org.springframework.beans.BeanUtils;
 public class AgendaDto {
 
     private Long id;
-    private String statusDto;
+    private String status;
     private ClientDto clientDto;
     private HorarioDto horarioDto;
     private ServicesDTO servicosDto;
