@@ -12,8 +12,9 @@ public class ClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    public void save(ClientDto clientDto){
+    public String save(ClientDto clientDto){
         ClientEntity clientEntity = new ClientEntity(clientDto);
         clienteRepository.save(clientEntity);
+        return "SUCESSO!";
     }
 }

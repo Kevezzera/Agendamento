@@ -6,6 +6,8 @@ import com.amil.crm_backend.repository.AgendaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AgendaService {
 
@@ -17,5 +19,8 @@ public class AgendaService {
           agendaRepository.save(agendaEntity);
      }
 
+     public List<AgendaEntity> listServicosCliente(Long id){
+          return agendaRepository.findByClient_Id(id);
+     }
 
 }
